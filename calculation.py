@@ -1,19 +1,44 @@
 import streamlit as st
 
+# كود الألوان والخلفية وخانات الإدخال 
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #F6C2DC;
+    }
+    
+    .stTextStyle, p, label {
+        color: #000000 !important;
+    }
+    
+    .stTextInput input, .stNumberInput input {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+        border-radius: 8px;
+        border: 1px solid #000000 !important;
+    }
+    
+    
+    .stAlert {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.title("***Calculate***")
 
 
-st.write("""Choose an option:
-
-a) Calculate the area of a square
-
-b) Calculate the area of a triangle
-
-c) Calculate the area of a rectangle
-
-d) Calculate
-
-e) Calculate Grades : """)
+st.markdown("""<div style='color: #70235E; font-weight: bold;'>
+Choose an option:<br> </div>
+<div style='color: #FFFFFF; font-weight: bold;'>
+a) Calculate the area of a square<br>
+b) Calculate the area of a triangle<br>
+c) Calculate the area of a rectangle<br>
+d) Calculate<br>
+e) Calculate Grades :<br>
+</div>""", unsafe_allow_html=True)
 
 enter = st.text_input("Enter your choice (a, b, c , d , e): ").lower().strip()
 

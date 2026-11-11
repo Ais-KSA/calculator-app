@@ -44,27 +44,27 @@ enter = st.text_input("Enter your choice (a, b, c , d , e): ").lower().strip()
 
 if enter == "b":
     
-    a = st.number_input("ادخل طول القاعدة:", min_value=0.0, step=1.0)
-    b = st.number_input("ادخل الارتفاع:", min_value=0.0, step=1.0) 
+    a = st.number_input("Enter base length :", min_value=0.0, step=1.0)
+    b = st.number_input("Enter the height:", min_value=0.0, step=1.0) 
     
-    if st.button("احسب المساحة"):
+    if st.button("Calculate the area"):
         Triangle = 0.5 * a * b
-        st.success(f"مساحة المثلث = {Triangle}")
+        st.success(f"Area of ​​a triangle = {Triangle}")
 
 elif enter == "a":
-    a = st.number_input("ادخل طول الضلع:", min_value=0.0, step=1.0)
+    a = st.number_input("Enter the side length:", min_value=0.0, step=1.0)
     
-    if st.button("احسب المساحة"):
+    if st.button("Calculate the area"):
         Square = a * a
-        st.success(f"مساحة المربع = {Square}")
+        st.success(f"Area of ​​a square = {Square}")
 
 elif enter == "c":
-    a = st.number_input("ادخل الطول:", min_value=0.0, step=1.0)
-    b = st.number_input("ادخل العرض:", min_value=0.0, step=1.0)
+    a = st.number_input("Enter the length:", min_value=0.0, step=1.0)
+    b = st.number_input("Enter the offer:", min_value=0.0, step=1.0)
     
-    if st.button("احسب المساحة"):
+    if st.button("Calculate the area"):
         Rectangle = a * b
-        st.success(f"مساحة المستطيل = {Rectangle}")
+        st.success(f"Area of ​​a rectangle = {Rectangle}")
 
 elif enter == "d":
     enter_1 = st.number_input("Enter number 1:", step=1.0)
@@ -103,6 +103,6 @@ elif enter == 'e':
             st.error('You have F / E')
 
 elif enter == "":
-    st.info("بانتظار اختيارك...")
+    st.info("Waiting for your selection...")
 else:
     st.warning('Please Enter a valid choice (a, b, c , d , e)')

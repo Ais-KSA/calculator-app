@@ -1,6 +1,6 @@
 import streamlit as st
 
-# كود الألوان والخلفية وخانات الإدخال 
+#Color code, background, and input fields
 st.markdown("""
     <style>
     .stApp {
@@ -82,7 +82,7 @@ elif enter == "d":
             if enter_2 != 0:
                 st.success(f"Result = {enter_1 / enter_2}")
             else:
-                st.error("لا يمكن القسمة على صفر!")
+                st.error("Cannot divide by zero!")
         else:
             st.warning('Please enter a valid type: + , - , / , *')
 
